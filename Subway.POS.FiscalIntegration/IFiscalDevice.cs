@@ -96,7 +96,7 @@ namespace Subway.POS.FiscalIntegration
         /// </summary>
         /// <param name="xmlDocument">XML document with the transaction details.</param>
         /// <returns>Status with an Error Code and a Message</returns>
-        FiscalInfoResponseResult RegisterFiscalTransaction(string xmlDocument);
+        FiscalInfoResponseResult RegisterFiscalTransaction(FiscalTransaction xmlDocument);
 
         /// <summary>
         ///Operation should be called to print to Device the requested report. Report types supported are dependent of the fiscal control unit hardware. Failure to print report should halt POS operations as indicated by Fiscal Laws where device is operating.

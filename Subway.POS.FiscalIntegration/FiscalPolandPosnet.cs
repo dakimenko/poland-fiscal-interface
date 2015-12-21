@@ -101,7 +101,7 @@ namespace Subway.POS.FiscalIntegration
             return SuccessStatus;
         }
 
-        public FiscalInfoResponseResult RegisterFiscalTransaction(string xmlDocument)
+        public FiscalInfoResponseResult RegisterFiscalTransaction(FiscalTransaction transaction)
         {
             return FiscalInfoResponseResult;
         }

@@ -87,7 +87,7 @@ namespace Subway.POS.FiscalIntegration
             throw new NotImplementedException();
         }
 
-        public FiscalInfoResponseResult RegisterFiscalTransaction(string xmlDocument)
+        public FiscalInfoResponseResult RegisterFiscalTransaction(FiscalTransaction transaction)
         {
             throw new NotImplementedException();
         }
