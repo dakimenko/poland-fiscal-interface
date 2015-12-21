@@ -21,5 +21,7 @@ namespace Subway.POS.FiscalIntegration
         public string POSId { get; set; }
 
         public TransactionType TransactionType { get; set; }
+
+        public IEnumerable<PaymentLine> Payments { get; set; } 
     }
 }
