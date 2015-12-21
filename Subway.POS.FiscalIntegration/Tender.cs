@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Subway.POS.FiscalIntegration
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Tender
     {
         public int Id { get; set; }

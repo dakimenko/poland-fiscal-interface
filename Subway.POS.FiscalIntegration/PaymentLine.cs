@@ -10,7 +10,13 @@ namespace Subway.POS.FiscalIntegration
     /// </summary>
     public class PaymentLine
     {
+        /// <summary>
+        /// 
+        /// </summary>
         public decimal Amount { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
         public Tender TenderType { get; set; }
     }
 }
