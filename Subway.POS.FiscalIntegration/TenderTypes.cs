@@ -7,6 +7,7 @@
         CHEQUE,
         VOUCHER,
         OTHER,
-        CREDIT
+        CREDIT,
+        FOREIGNCURRECY
     }
 }

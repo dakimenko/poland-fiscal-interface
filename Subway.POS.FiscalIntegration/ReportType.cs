@@ -8,15 +8,17 @@ namespace Subway.POS.FiscalIntegration
     public enum ReportType
     {
             XReport,
-            LastReceiptReprint,
             Zreport,
-            PeriodicalReportExtended,
-            PeriodicalReportCondensed,
-            ClosurePeriodicalReportExtended,
-            ClosurePeriodicalReportCondensed,
-            PMXReport,
-            EJReport,
-            ReceiptReprint
-
+            PeriodicalReportByDateFull,
+            PeriodicalReportByDateSummary,
+            PeriodicalReportByNumberFull,
+            PeriodicalReportByNumberSummary,
+            PeriodicalReportMonthlySalesFull,
+            PeriodicalReportMonthlySalesSummary,
+            PeriodicalReportAccountingFull,
+            PeriodicalReportAccountingSummary,
+            ClosureReportReprint,
+            ReceiptReprintLast,
+            ReceiptReprintByNumber
     }
 }

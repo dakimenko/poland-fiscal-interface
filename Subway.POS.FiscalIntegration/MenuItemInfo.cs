@@ -14,6 +14,5 @@ namespace Subway.POS.FiscalIntegration
         public TaxInfo TaxInfo { get; set; }
         public bool IsPromotion { get; set; }
 
-
     }
 }

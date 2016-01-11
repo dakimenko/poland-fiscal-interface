@@ -13,19 +13,15 @@ namespace Subway.POS.FiscalIntegration
         public ReportType ReportType { get; set; }
 
         /// <summary>
-        /// The internal receipt number to reprint when requesting a reprint
+        /// The starting (date or number) when requesting a report range
+        /// The receipt number if requesting only one parameter
         /// </summary>
-        public int? ReceiptNumber { get; set; }
+        public string StartParam { get; set; }
 
         /// <summary>
-        /// The starting date when requesting a report range
+        /// The ending (date or number) when requesting a report range
         /// </summary>
-        DateTime? StartDate { get; set; }
-
-        /// <summary>
-        /// The ending date when requesting a report range
-        /// </summary>
-        DateTime? EndDate { get; set; }
+        public string EndParam { get; set; }
 
     }
 }

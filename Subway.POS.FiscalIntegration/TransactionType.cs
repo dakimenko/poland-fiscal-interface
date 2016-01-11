@@ -8,7 +8,6 @@ namespace Subway.POS.FiscalIntegration
     public enum TransactionType
     {
         Sale,
-        Return,
-        Duplicate
+        Refund
     }
 }
