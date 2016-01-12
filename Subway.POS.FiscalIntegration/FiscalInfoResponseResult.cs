@@ -2,9 +2,11 @@
 {
     public class FiscalInfoResponseResult : ResponseResultBase
     {
-        /// <summary>
-        /// an xml with the results
-        /// </summary>
-        public string InfoData { get; set; }
+
+        public int ReceiptNumber { get; set; }
+
+        public decimal GrandTotalSale { get; set; }
+
+        public decimal GrandTotalRefund { get; set; }
     }
 }

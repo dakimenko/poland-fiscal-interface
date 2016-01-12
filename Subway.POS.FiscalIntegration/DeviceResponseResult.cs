@@ -8,9 +8,15 @@ namespace Subway.POS.FiscalIntegration
     public class DeviceResponseResult : ResponseResultBase
     {
         /// <summary>
-        /// Fiscal device status in XML format. ( lasr receipt number, GT amount, device serial number, etc.)
+        /// Available width of non-fiscal report printout (for Application reports formatting)
         /// </summary>
-        public string DeviceData { get; set; }
+        public int PrintoutWidth { get; set; }
 
+        /// <summary>
+        /// Flag to inform operator that receipt paper is near to end 
+        /// </summary>
+        public bool AddMorePaper { get; set; }
+
+        public string FiscalNumber { get; set; }
     }
 }

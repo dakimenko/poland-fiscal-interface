@@ -7,18 +7,20 @@ namespace Subway.POS.FiscalIntegration
     public class FiscalPolandPosnet : IFiscalDevice
     {
         
-        private static readonly Status SuccessStatus = new Status{ErrorCode = ErrorCode.Success, ErrorMessage = "Success"};
+        private static readonly Status SuccessStatus = new Status{Success = true, ErrorMessage = "", IsCritical = false};
 
         private static readonly FiscalInfoResponseResult FiscalInfoResponseResult = new FiscalInfoResponseResult()
         {
             Response = SuccessStatus,
-            InfoData = "<infoData></infoData>"
+            GrandTotalSale = 0,
+            GrandTotalRefund = 0
         };
 
         private static readonly DeviceResponseResult DeviceResponseResult = new DeviceResponseResult()
         {
             Response = SuccessStatus,
-            DeviceData = "<deviceData></deviceData>"           
+            PrintoutWidth = 40,
+            AddMorePaper = false
         };
 
         public Status Init(DeviceInitConfiguration configuration)
