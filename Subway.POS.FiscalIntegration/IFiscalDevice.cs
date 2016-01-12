@@ -94,9 +94,9 @@ namespace Subway.POS.FiscalIntegration
         /// <summary>
         ///Operation will be called to record any fiscal transaction required by law. This includes sales, return by item. Voids should be processed as return by item of entire order to be voided. Failure to process any transaction should halt POS operations as indicated by Fiscal Laws where device is operating.
         /// </summary>
-        /// <param name="xmlDocument">XML document with the transaction details.</param>
+        /// <param name="transaction">Represnts the  <see cref="FiscalTransaction"/> that will include the data (list of items and payments) required to record it to the fiscal control unit</param>
         /// <returns>Status with an Error Code and a Message</returns>
-        FiscalInfoResponseResult RegisterFiscalTransaction(FiscalTransaction xmlDocument);
+        FiscalInfoResponseResult RegisterFiscalTransaction(FiscalTransaction transaction);
 
         /// <summary>
         ///Operation should be called to print to Device the requested report. Report types supported are dependent of the fiscal control unit hardware. Failure to print report should halt POS operations as indicated by Fiscal Laws where device is operating.
